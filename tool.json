@@ -1,0 +1,49 @@
+{
+  "id": "E055",
+  "slug": "eng-gravity-at-radius",
+  "title": "천체 중력가속도 계산기",
+  "title_en": "Gravity at Radius Calculator",
+  "category": "우주",
+  "category_en": "Space",
+  "fields": [
+    {
+      "key": "m",
+      "label": "천체 질량 M",
+      "label_en": "Body mass M",
+      "dimension": "mass",
+      "example": 5.9722e+24,
+      "constraint": "positive",
+      "display_unit": "kg",
+      "display_value": "5.9722e+24"
+    },
+    {
+      "key": "r",
+      "label": "천체 중심부터 거리 r",
+      "label_en": "Distance from the body center r",
+      "dimension": "length",
+      "example": 6371000,
+      "constraint": "positive",
+      "display_unit": "km",
+      "display_value": "6371"
+    }
+  ],
+  "result_label": "중력가속도 크기 g",
+  "result_label_en": "Gravitational acceleration magnitude g",
+  "result_dimension": "acceleration",
+  "formula": "g = GM/r²",
+  "purpose": "구대칭 천체 바깥에서 거리별 중력가속도 크기 계산",
+  "purpose_en": "Calculate the gravitational acceleration outside a spherical body.",
+  "assumptions": "M,r>0. 천체 외부의 구대칭 뉴턴 중력만 계산한다. r은 중심거리다. 자전에 의한 원심 효과·다른 천체·내부 밀도분포는 제외한다.",
+  "assumptions_en": "Required: M,r>0 and an exterior spherical Newtonian field. r is center distance. Excluded: rotation, other bodies and interior density profiles.",
+  "sources": [
+    {
+      "label": "OpenStax · 13 2 gravitation near earths surface",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/13-2-gravitation-near-earths-surface"
+    }
+  ],
+  "condition": "",
+  "condition_en": "",
+  "site": "https://nanalab.kr/eng-gravity-at-radius/",
+  "repository": "https://github.com/NaNaCompany/eng-gravity-at-radius",
+  "output_unit": "ms2"
+}
